@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head><meta charset="UTF-8">
+    <title>MVC</title>
+</head>
+
+<body>
+<table>
+    <tr>
+        <th>Model</th>
+        <th>Serial</th>
+        <th>Color</th>
+    </tr>
+    <tr th:each="cars: ${cars}">
+        <td th:text="${cars.model}"></td>
+        <td th:text="${cars.serial}"></td>
+        <td th:text="${cars.color}"></td>
+    </tr>
+</table>
+
+</body>
+</html>
